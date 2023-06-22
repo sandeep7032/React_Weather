@@ -9,7 +9,11 @@ const Search = () => {
   const { addData } = useContext(AuthContext);
 
   const weatherInfo = () => {
-    getData(input, addData);
+    if (input === "") {
+      alert("Please Enter City Name");
+    } else {
+      getData(input, addData);
+    }
   };
 
   return (
@@ -32,7 +36,6 @@ const Search = () => {
         m="10px"
         size="lg"
         marginTop="1px"
-        // onClick={weatherInfo}
         onClick={weatherInfo}
       >
         Search
