@@ -11,7 +11,7 @@ const Home = () => {
       <Box boxShadow="2xl" w="70%" m="10px auto">
         <Stack>
           <Text fontSize="4xl" m="10px">
-            <b>Weather Forecast</b>
+            <b>Weather Dashboard</b>
           </Text>
         </Stack>
         <Search />
